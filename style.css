@@ -1,0 +1,349 @@
+/* Global Styles */
+ body {
+   font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+} 
+
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #5c5a5a;
+}
+
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 15px 0;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #17a2b8 !important;
+}
+
+/* Header */
+header {
+  padding: 120px 20px 60px;
+  background: linear-gradient(to right, #212529, #343a40);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+header h4 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+/* Hover Effect */
+.hover-effect {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  perspective: 1000px;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.hover-effect:hover {
+  transform: rotateY(5deg) scale(1.02);
+  box-shadow: 0 0 20px rgba(23, 162, 184, 0.4);
+  background-color: #ffffff;
+}
+
+/* Section Headings */
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #343a40;
+}
+
+/* Progress Bars */
+.progress-bar {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Badges */
+.badge {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+  border: 2px solid #17a2b8;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+form:hover {
+  transform: rotateY(3deg) scale(1.01);
+  box-shadow: 0 10px 20px rgba(23, 162, 184, 0.3);
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.footer a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Spacing */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-md-6 {
+    padding: 20px;
+  }
+}
+
+
+/* ul li.hover-effect:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(23, 162, 184, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+} */
+
+/* Timeline Layout */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid #17a2b8;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #17a2b8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(23, 162, 184, 0.5);
+}
+
+.timeline-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(23, 162, 184, 0.3);
+}
+
+.timeline-content h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+
+ .hobbies-wrap {
+      perspective: 1500px; /* gives 3d depth to children */
+      padding: 2rem 0 4rem;
+    }
+
+    .hobby-card {
+      background:#ffffff;
+      border-radius:16px;
+      padding:1.6rem;
+      min-height:120px;
+      display:flex;
+      align-items:flex-start;
+      gap:1rem;
+      flex-direction:column;
+      box-shadow: 0 8px 20px rgba(10,20,30,.07);
+      transition: transform .25s cubic-bezier(.2,.9,.3,1), box-shadow .25s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+      border: 1px solid rgba(10,20,30,.03);
+    }
+
+    .hobby-icon {
+      font-size:34px;
+      width:54px;
+      height:54px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:10px;
+      background: linear-gradient(180deg, rgba(18,168,214,.08), rgba(18,168,214,.03));
+      box-shadow: 0 6px 14px rgba(12,30,45,.03);
+    }
+
+    .hobby-title {
+      font-weight:700;
+      margin:0;
+      font-size:1.05rem;
+    }
+    .hobby-desc {
+      margin:0;
+      color:#6b6f76;
+      font-size:.92rem;
+    }
+
+    /* CSS only 3D hover effect (works on desktop) */
+    .hobby-card:hover {
+      transform: translateY(-12px) rotateX(6deg) scale(1.02);
+      box-shadow: 0 22px 40px rgba(8,20,35,.12);
+    }
+
+    /* For smaller screens, reduce movement */
+    @media (max-width:576px) {
+      .hobby-card:hover { transform: translateY(-6px) scale(1.01); }
+    }
+   /* Container for the buttons */
+    .cta-row {
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      margin: 2rem 0;
+    }
+
+    /* Download button style */
+    .btn-download {
+      background: linear-gradient(90deg,#13c5c0,#12a8d6);
+      color:#072026;
+      font-weight:700;
+      border:none;
+      padding: .65rem 1.2rem;
+      border-radius: .6rem;
+      box-shadow: 0 8px 18px rgba(18,168,214,.18), inset 0 1px 0 rgba(255,255,255,.06);
+      display:inline-flex;
+      gap:.6rem;
+      align-items:center;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn-download:hover, .btn-download:focus {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 28px rgba(18,168,214,.22);
+      text-decoration: none;
+      color: #021214;
+    }
+
+    /* Outline contact button */
+    .btn-outline-custom {
+      border: 2px solid rgba(18,168,214,.35);
+      color: rgba(18,168,214,0.95);
+      background: transparent;
+      padding: .5rem 1rem;
+      border-radius:.55rem;
+      display:inline-flex;
+      gap:.5rem;
+      align-items:center;
+      transition: background .18s ease, transform .18s ease;
+    }
+    .btn-outline-custom:hover {
+      background: rgba(18,168,214,.06);
+      transform: translateY(-3px);
+    }
+
+    button, .btn, input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover {
+  background-color: #005fa3;
+}
